@@ -1,0 +1,202 @@
+
+.dash-row .side_two .row-one{
+    display: flex;
+    gap: 2rem;
+}
+
+.dash-row .side_two .row-one .side-col-one{
+    flex-basis: 550px;
+    background: #fff;
+    padding: 2.5rem;
+    box-shadow: 0 0 5px #d8d3d3;
+}
+
+.dash-row .side_two .row-one .side-col-one h5{
+    font-size: 1.8rem;
+    font-family: 'poppins', sans-serif;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid #646161;
+}
+
+.dash-row .side_two .row-one .side-col-one .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.dash-row .side_two .row-one .side-col-one .box .inputBox,
+.dash-row .side_two .row-one .side-col-one .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.dash-row .side_two .row-one .side-col-one .box .inputBox label,
+.dash-row .side_two .row-one .side-col-one .inputBox label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding-bottom: 1.5rem;
+}
+
+.dash-row .side_two .row-one .side-col-one .box .inputBox input,
+.dash-row .side_two .row-one .side-col-one .inputBox input{
+    border: 1px solid #d8d3d3;
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.dash-row .side_two .row-one .side-col-one .inputBox input{
+    margin-bottom: 2rem;
+}
+
+.dash-row .side_two .row-one .side-col-one a{
+    padding: 1rem 1.5rem;
+    background: var(--main-color);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.dash-row .side_two .row-one .side-col-one a:hover{
+    background: var(--text-color);
+}
+
+.dash-row .side_two .row-one .side-col-two{
+    flex-basis: 350px;
+    background: #fff;
+    padding: 2.5rem;
+    box-shadow: 0 0 5px #d8d3d3;
+}
+
+.dash-row .side_two .row-one .side-col-two h5{
+    font-size: 1.7rem;
+    font-family: 'poppins', sans-serif;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid #646161;
+}
+
+.dash-row .side_two .row-one .side-col-two .box .inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.dash-row .side_two .row-one .side-col-two .box .inputBox label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.dash-row .side_two .row-one .side-col-two .box .inputBox input{
+    border: 1px solid #d8d3d3;
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.dash-row .side_two .row-one .side-col-two a{
+    width: 250px;
+    height: 40px;
+    padding: 1.1rem 1.4rem;
+    background: var(--main-color);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 1px;
+} 
+
+.dash-row .side_two .row-one .side-col-two a:hover{
+    background: var(--text-color);
+}
+
+.dash-row .side_two .row-two{
+  background: #fff;
+  padding: 2.5rem;
+  margin-top: 2.6rem;
+  box-shadow: 0 0 5px #d8d3d3;
+}
+
+.dash-row .side_two .row-two h5{
+    font-size: 1.8rem;
+    font-family: 'poppins', sans-serif;
+    color: var(--text-color);
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #646161;
+}
+
+.dash-row .side_two .row-two .box{
+    padding-top: 2rem;
+}
+
+.dash-row .side_two .row-two .box .inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.dash-row .side_two .row-two .box .inputBox label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.dash-row .side_two .row-two .box .inputBox input{
+    border: 1px solid #d8d3d3;
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.dash-row .side_two .row-two .button{
+    margin-top: 3rem;
+}
+
+
+.dash-row .side_two .row-two a{
+    padding: 1rem 1.5rem;
+    background: var(--main-color);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 1px; 
+}
+
+.dash-row .side_two .row-two a:hover{
+    background: var(--text-color);
+}
+
+
+@media(max-width: 1300px) {
+    .dash-row .side_two .row-one{
+        flex-wrap: wrap;
+    }
+    
+    .dash-row .side_two .row-one .side-col-one{
+       flex-basis: 100%;
+    }
+
+    .dash-row .side_two .row-one .side-col-two{
+        flex-basis: 100%;
+     }
+}
+
+@media(max-width: 650px) {
+    .dash-row .side_two .row-one .side-col-one .box{
+        grid-template-columns: 1fr;
+    }
+} 

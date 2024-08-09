@@ -1,0 +1,239 @@
+
+.dash-row .side_two {
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.dash-row .side_two h5{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-family: 'poppins', sans-serif;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #646161;
+}
+
+.dash-row .side_two .list-header h6{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    color: var(--text-color);
+}
+
+.dash-row .side_two .list-header label{
+    display: flex;
+    padding: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .list-header input{
+    width: 100%;
+    border: 1px solid #d8d3d3;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.dash-row .side_two .list-row .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.dash-row .side_two .list-row .box .inputBox {
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 1rem;
+}
+
+.dash-row .side_two .list-row .box .inputBox label{
+    padding: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .list-row .box .inputBox select,
+.dash-row .side_two .list-row .box .inputBox input {
+    width: 100%;
+    border: 1px solid #d8d3d3;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background: #fff;
+}
+
+.dash-row .side_two .tags label {
+    margin-top: 2rem;
+    display: block;
+    padding: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .tags input{
+    width: 100%;
+    border: 1px solid #d8d3d3;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.dash-row .side_two h6{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: var(--text-color);
+}
+
+.dash-row .side_two .location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dash-row .side_two .location .box{
+    flex-basis: 400px;
+}
+
+.dash-row .side_two .location .box .inputBox label{
+    display: block;
+    padding-bottom: 1rem;
+    padding: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .location .box .inputBox input{
+    width: 100%;
+    border: 1px solid #d8d3d3;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.dash-row .side_two .inputBox label {
+    display: block;
+    padding-bottom: 1rem;
+    padding: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .inputBox textarea{
+  width: 100%;
+  border: 1px solid #d8d3d3;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.dash-row .side_two .feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dash-row .side_two .feature .checkBox {
+    flex: 1 1 20rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #646161;
+}
+
+.dash-row .side_two .feature .checkBox input{
+    accent-color: var(--main-color);
+}
+
+.dash-row .side_two .info .box{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.dash-row .side_two .info .box .inputBox label{
+    padding-bottom: 1rem;
+    padding: 1rem 0;
+    display: block;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .info .box .inputBox input{
+    width: 100%;
+    border: 1px solid #d8d3d3;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.dash-row .side_two .condition{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.dash-row .side_two .button{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.dash-row .side_two .button a{
+    background: var(--main-color);
+    color: #fff;
+    width: 250px;
+    height: 45px;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+
+.dash-row .side_two .button a:hover{
+    background: var(--text-color);
+}
+
+
+@media(max-width: 768px) {
+    .dash-row .side_two .list-row .box{
+        flex-wrap: wrap;
+    }
+
+    .dash-row .side_two .list-row .box .inputBox input{
+        flex-basis: 100%;
+    }
+
+    .dash-row .side_two .list-row .box .inputBox input,
+    .dash-row .side_two .list-row .box .inputBox select {
+        width: 100%;
+    }
+
+    .dash-row .side_two .location{
+        flex-wrap: wrap;
+    }
+
+    .dash-row .side_two .location .box{
+        flex-basis: 100%;
+    }
+
+    .dash-row .side_two .info .box{
+        flex-wrap: wrap;
+    }
+
+    .dash-row .side_two .info .box .inputBox{
+        flex-basis: 100%;
+    }
+}

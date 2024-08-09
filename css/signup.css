@@ -1,0 +1,151 @@
+
+.signup{
+    padding: 4rem 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup .title h3{
+    font-size: 34px;
+    color: #3a3737;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.signup .title h3::before{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 200px;
+    height: 4px;
+    background: var(--main-color);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    animation: animate 8s linear infinite;
+
+}
+
+@keyframes animate{
+    0% {
+        width: 0px;
+    }
+}
+
+.signup form{
+    width: 70%;
+    margin: 40px auto;
+}
+
+.signup form .inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.signup form .inputs .inputBx{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.signup form .inputs .inputBx input{
+    width: 100%;
+    padding: 12px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.signup form .inputs .inputBx input:focus{
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+}
+
+.signup form .inputs .inputBx label{
+    font-size: 17px;
+    color: #3a3737;
+}
+
+.signup form .checkBx{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #3a3737;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.signup form .submit{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup form .submit button{
+    margin: 60px 0 10px;
+    width: 250px;
+    height: 50px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup form .submit button:hover{
+    background: var(--text-color);
+}
+
+.social_log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social_log p{
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #646161;
+}
+
+.social_log .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social_log .social i{
+    font-size: 26px;
+    background: var(--main-color);
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social_log .social i:hover{
+    background: var(--text-color);
+}
+
+@media(max-width: 768px) {
+    .signup form .inputs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 450px) {
+    .signup .title h3{
+       font-size: 24px;
+    }
+}

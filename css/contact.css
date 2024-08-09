@@ -1,0 +1,150 @@
+.contact .contact-row{
+    padding: 4.5rem 12.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contact-row .contact-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fddddf;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+.contact-row .contact-col:hover{
+    transform: translateY(-10px);
+}
+
+.contact-row .contact-col img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contact-row .contact-col h6{
+    padding: 6px 0;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    color: #646161;
+}
+
+.contact-row .contact-col p{
+    font-size: 14px;
+    color: #646161;
+}
+
+.contact .touch-row{
+    padding: 4.5rem 12.5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.touch-row .touch-col img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 50% 50% 50%;
+}
+
+.touch-row .touch-col h5{
+    font-size: 24px;
+    font-family: 'poppins', sans-serif;
+    color: #646161;
+}
+
+.touch-row .touch-col p{
+    font-size: 14px;
+    color: #646161; 
+    font-family: 'poppins', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.touch-row .touch-col .box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+
+.touch-row .touch-col .box .inputBx,
+.touch-row .touch-col .inputBx{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #646161;
+    margin-bottom: 30px;
+}
+
+.touch-row .touch-col .box .inputBx input,
+.touch-row .touch-col .inputBx input{
+   width: 100%;
+   height: 100%;
+   padding: 5px;
+   font-size: 16px;
+   border-radius: 8px;
+}
+
+.touch-row .touch-col .box .inputBx input:focus,
+.touch-row .touch-col .inputBx input:focus,
+.touch-row .touch-col textarea:focus{
+    border: 1px solid var(--main-color);
+}
+
+.touch-row .touch-col textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #646161;
+    border-radius: 8px;
+}
+
+.touch-row .touch-col button{
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.touch-row .touch-col button:hover{
+    background: var(--text-color);
+}
+
+
+@media(max-width: 1200px) {
+    .contact .contact-row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 991px) {
+    .contact .contact-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact .touch-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .contact .contact-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact .touch-row .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact .touch-row .box{
+        gap: 0;
+    }
+}

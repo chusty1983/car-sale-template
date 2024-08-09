@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inventory Single - Lipson Cars</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!----Swiper css link--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!----Customer css file--->
+    <link rel='stylesheet' type='text/css' media='screen' href="css/style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="css/inventory-grid.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="css/inventory-single.css">
+
+    <!----boxicon cdn link--->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+   <!----Top header section start here--->
+   <div class="top-header">
+    <div class="out-box">
+        <div class="inside-box">
+            <div class="col-1">
+                <span><i class='bx bxs-envelope' ></i> info@lipson.com</span>
+                <span><i class='bx bxs-phone-call' ></i> +2 123 678 9034</span>
+                <span><i class='bx bxs-alarm' ></i> Mon - Sat (8am - 7pm)</span>
+            </div>
+
+            <div class="col-2">
+                <a href="#"><i class='bx bx-arrow-to-right' ></i>Login</a>
+                <a href="#"><i class='bx bxs-user' ></i>Register</a>
+                <span>Follow Us:</span>
+                <div class="social">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+   
+  <!----Navbar section start here---> 
+  <header class="header">
+    <div class="logo">
+        <a href="/index.html"><img src="img/logo/logo.png" alt="" /></a>
+    </div>
+    <nav>
+        <div class="navbar"> 
+              <ul class="navLinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="#">Inventory<i class='bx bx-chevron-down chev' ></i></a>
+                    <ul class="drop-down">
+                        <li><a href="/inventory-grid.html">Inventory Grid</a></li>
+                        <li><a href="/inventory-list.html">Inventory List</a></li>
+                        <li><a href="/inventory-single.html" class="active">Inventory Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a>
+                    <ul class="drop-down">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Car Listing<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-two">
+                                <li><a href="/inventory-grid.html">Listing Grid</a></li>
+                                <li><a href="/inventory-list.html">Listing List</a></li>
+                                <li><a href="/inventory-single.html" class="active">Listing Single</a></li>
+                                <li><a href="#">Compare</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/dashboard.html">Account</a></li>
+                        <li><a href="#">My Account<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-three">
+                                <li><a href="/dashboard.html">Dashboard</a></li>
+                                <li><a href="/profile.html">My Profile</a></li>
+                                <li><a href="/listing.html">My Listing</a></li>
+                                <li><a href="/addListing.html">Add Listing</a></li>
+                                <li><a href="#">Favourites</a></li>
+                                <li><a href="#">Message</a></li>
+                                <li><a href="#">Setting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Authentication<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-four">
+                                <li><a href="./signup-login/login.html">Login</a></li>
+                                <li><a href="./signup-login/register.html">Register</a></li>
+                                <li><a href="./signup-login/reset-password.html">Forgot Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-five">
+                                <li><a href="./service/services.html">Services</a></li>
+                                <li><a href="./service/service-single.html">Service Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dealer<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-six">
+                                <li><a href="/dealers.html">Dealer</a></li>
+                                <li><a href="#">Dealer Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/brand.html">Brands</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/price-plan.html">Pricing Plan</a></li>
+                        <li><a href="/calculator.html">Calculator</a></li>
+                        <li><a href="/testimonials.html">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shop<i class='bx bx-chevron-down' ></i></a>
+                    <ul class="drop-down">
+                        <li><a href="./shop/shop.html">Shop</a></li>
+                        <li><a href="./shop/cart.html">Shopping Cart</a></li>
+                        <li><a href="./shop/checkout.html">Shop Checkout</a></li>
+                        <li><a href="./shop/shop-single.html">Single Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog<i class='bx bx-chevron-down' ></i></a>
+                    <ul class="drop-down">
+                        <li><a href="./blog/blog.html">Blog</a></li>
+                        <li><a href="./blog/blog-single.html">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+        </div>  
+            <div class="others">
+                <i class='bx bx-search' ></i>
+                <i class='bx bxs-cart cart' ></i>
+                <a href="/addListing.html" class="addBtn"><i class='bx bx-plus-circle' ></i>Add Listing</a>
+                <i class='bx bx-menu-alt-left' id="menuBtn"></i>
+           </div>        
+    </nav>
+  </header>
+
+  <!----Inventory Single section start here--->
+  <div class="inventory">
+    <h2>Inventory Single</h2>
+    <div class="link">
+        <a href="./index.html">Home</a>
+        <span>>>></span>
+        <p>Inventory Single</p>
+    </div>
+</div>
+
+<!----Inventory Slide section start here--->
+<section class="slider">
+    <div class="slider_one">
+        <div class="col-1">
+            <h6>Brand New</h6>
+            <h5>Mercedes Benz Car</h5>
+            <div class="date">
+                <span><i class="bx bx-alarm"></i>Listed on sat, oct 02 2023</span>
+                <span><i class="bx bx-show"></i>Views: 850</span>
+            </div>
+            <div style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;" class="swiper myInvent2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-4.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper myInvent1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/invectory/single-4.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="col-1">
+        <h5>Key Information</h5>
+        <div class="key-row">
+            <div class="key">
+                <i class="bx bx-car"></i>
+                <div class="name">
+                    <span>Body Type</span>
+                    <p>Coupe</p>
+                </div>
+            </div>
+            <div class="key">
+                <i class="bx bx-car"></i>
+                <div class="name">
+                    <span>Condition</span>
+                    <p>Brand New</p>
+               </div>
+        </div>
+        <div class="key">
+            <i class="bx bx-stopwatch"></i>
+            <div class="name">
+                <span>Mileage</span>
+                <p>50,000 (MI)</p>
+           </div>
+      </div>
+      <div class="key">
+        <i class="bx bx-brightness"></i>
+        <div class="name">
+            <span>Transmission</span>
+            <p>Automatic</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-car"></i>
+        <div class="name">
+            <span>Year</span>
+            <p>2023</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-sidebar"></i>
+        <div class="name">
+            <span>Fuel Type</span>
+            <p>Dissel</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-car"></i>
+        <div class="name">
+            <span>Color</span>
+            <p>Red</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-car"></i>
+        <div class="name">
+            <span>Doors</span>
+            <p>2 Doors</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-car"></i>
+        <div class="name">
+            <span>Cylinders</span>
+            <p>05</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-car"></i>
+        <div class="name">
+            <span>Engine Size</span>
+            <p>2000 (cc)</p>
+       </div>
+     </div>
+     <div class="key">
+        <i class="bx bx-car"></i>
+        <div class="name">
+            <span>VIN</span>
+            <p>532GAFDSUY</p>
+       </div>
+     </div>
+
+    </div> 
+    </div>
+    <div class="col-1">
+        <h5>Description</h5>
+        <p class="desc">
+            All of our vehicles have gone through an extensive safety inspection
+            performed by a certified technician. We take pride in selling quality 
+            pre-driven vehicles sold the only way the Bill Jacobs Family has for 
+            over 50 years
+        </p>
+        <p class="desc">
+            All of our vehicles have gone through an extensive safety inspection
+            performed by a certified technician. We take pride in selling quality 
+            pre-driven vehicles sold the only way the Bill Jacobs Family has for 
+            over 50 years. All of our vehicles have gone through an extensive 
+            safety inspection performed by a certified technician.
+        </p>
+        <h5>Car Features</h5>
+        <div class="features">
+          <p class="fe"><i class="bx bx-check-shield"></i>Anti-lock Braking System</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Parking Sensor</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Navigation System</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Bluetooth HandsFree</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Dvd System</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>CoolBox</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Remote Entry</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Adaptive HeadLamps</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Reverse Camera</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>CD Player</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Sunroof</p>
+          <p class="fe"><i class="bx bx-check-shield"></i>Tinted Windows</p>
+        </div> 
+
+        <h5>Vehicle History</h5>
+        <div class="history">
+            <p class="fe"><i class="bx bx-check-shield"></i>No engine noise</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>wiring harness/fuse box/power module</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>clutch operation</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>turn steering wheel full from leftwards and rightwards</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>gear shift/movement</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>first body</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>seat and arm rest upholstery</p>
+            <p class="fe"><i class="bx bx-check-shield"></i>cooling performance</p>
+        </div>
+    </div>
+    </div>
+
+   <div class="slider_two">
+    <div class="col-2">
+        <h3>$50,569</h3>
+        <div class="location">
+            <span><i class="bx bx-stopwatch"></i>50k miles</span>
+            <span><i class="bx bx-location-plus"></i>25/B Milford, New York</span>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="customer">
+            <img src="/img/invectory/com-1.jpg" alt="" />
+            <div class="Details">
+                <h6>Marid Anderson</h6>
+                <span>Customer Advisor</span>
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-linkedin"></i>
+            </div>
+        </div>
+    </div>
+
+   <div class="col-2">
+    <h6>Contact Details</h6>
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+    <textarea cols="30" rows="6" placeholder="Write Message"></textarea>
+    <button>Send Now <i class="bx bx-right-arrow-alt"></i></button>
+   </div> 
+   </div> 
+</section>
+
+<!---- Footer section start here--->
+<div class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <img src="/img/logo/logo-light.png" alt="" />
+           <p>Not all customers will qualify. All decisions related to 
+                submission of consumer's credit application, assignment</p>
+                <span><i class="bx bx-phone"></i>+2 123 654 7898</span>
+                <span><i class="bx bx-location-plus"></i>25/B Milford, New York</span>
+                <span><i class="bx bx-envelope"></i>info@lipson.com</span>
+        </div>
+        <div class="footer-col">
+            <h5>Quick Links</h5>
+            <a href="#"><i class="bx bx-chevron-right"></i>About us</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Update News</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Testimonials</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Terms of Services</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Privacy policy</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Our Dealers</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>About us</a>
+        </div>
+        <div class="footer-col">
+            <h5>Support Center</h5>
+            <a href="#"><i class="bx bx-chevron-right"></i>FAQ's</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Affiliates</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Testimonials</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Booking Tips</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Sell Vehicles</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Contact Us</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Sitemap</a>
+        </div>
+        <div class="footer-col">
+            <h5>Newsletter</h5>
+            <p>Sign up for our newsletter and get the latest update on our cars</p>
+            <input type="text" placeholder="Your Email..">
+            <button>Subscribe Now <i class="bx bxl-telegram"></i></button>
+            
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Copyright 2023, <span>Lipson.</span> All Right Reserved</p>
+        <div class="social">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-youtube"></i>
+        </div>
+    </div>
+  </div>
+  
+
+  <!----Swiper js link start here--->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!----Custom script start here--->
+  <script src="js/main.js"></script>
+</body>
+</html>

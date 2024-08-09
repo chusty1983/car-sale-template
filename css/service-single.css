@@ -1,0 +1,125 @@
+.service_single{
+   padding: 6.5rem 10.5%;
+   display: flex;
+   justify-content: space-between;
+   gap: 26px; 
+}
+
+.service_single .left{
+    flex: 20rem;
+}
+
+.service_single .left .all{
+    background: #dbf7f7;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.service_single .left .all h4{
+    color: #646161;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.service_single .left .all p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d8d3d3;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.service_single .left .all p:hover{
+    color: var(--main-color);
+    margin-left: 6px;
+}
+
+.service_single .left .download{
+    background: #dbf7f7;
+    border-radius: 10px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service_single .left .download a{
+    border: 2px solid var(--main-color);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.service_single .left .download a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+
+.service_single .right{
+    flex: 40rem;
+}
+
+.service_single .right img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service_single .right h4{
+    padding: 20px 0;
+    font-size: 24px;
+    color: #646161;
+}
+
+.service_single .right p{
+    color: #646161;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.service_single .right .images{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service_single .right .images img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.service_single .right .lines p{
+    color: #646161;
+}
+
+.service_single .right p i{
+    color: var(--main-color);
+}
+
+
+@media(max-width: 991px) {
+    .service_single{
+        flex-wrap: wrap;
+    }
+
+    .service_single .left{
+        flex: 100%;
+    }
+
+    .service_single .right{
+        flex: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+    .service_single .right .images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 

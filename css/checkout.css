@@ -1,0 +1,234 @@
+
+.checkout{
+    padding: 6.5rem 12.5%;
+}
+
+.checkout .billing{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.billing .left{
+    display: flex;
+    flex-direction: column;
+    background: #f3efef;
+    width: 700px;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.billing .right{
+    display: flex;
+    flex-direction: column;
+    background: #f3efef;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.billing .left h2,
+.billing .right h2{
+    font-size: 28px;
+    color: #646161;
+    padding-bottom: 20px;
+}
+
+.billing .left .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.billing .left .inputBx{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.billing .left .row .inputBx label,
+.billing .left .inputBx label{
+    font-size: 18px;
+    color: #646161;
+}
+
+.billing .left .row .inputBx input,
+.billing .left .inputBx input{
+    width: 100%;
+    padding: 14px 7px;
+    font-size: 16px;
+    color: #646161;
+    border-radius: 5px;
+    border: 1px solid #d8d3d3;
+    letter-spacing: 0.5px;
+}
+
+.billing .left .row .inputBx input:focus,
+.billing .left .inputBx input:focus{
+    border: 1px solid var(--main-color);
+}
+
+.billing .left .inputBx{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.billing .right .summary_info{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.billing .right .summary_info .sum-col{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 17px;
+    align-items: center;
+}
+
+.billing .right .summary_info .sum-col p{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.billing .right .summary_info .sum-col span{
+    color: #646161;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing .right .summary_info .sum-col span.total{
+    color: var(--main-color);
+}
+
+.billing .right .summary_info .sum-col.amount{
+    border-top: 1px solid #d8d3d3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.billing .right .summary_info a{
+    background: var(--main-color);
+    color: #fff;
+    padding: 15px 30px 15px 20px;
+    font-size: 18px;
+    border-radius: 7px;
+    position: relative;
+    transition: 0.5s;
+    margin-top: 1rem;
+}
+
+.billing .right .summary_info a:hover{
+    background: var(--text-color);
+}
+
+.billing .right .summary_info a i{
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+}
+
+.payment,
+.shipping{
+    background: #f3efef;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.payment h2,
+.shipping h2{
+    font-size: 28px;
+    color: #646161;
+    padding-bottom: 20px;
+}
+
+.payment .row,
+.shipping .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.payment .row .inputBx,
+.shipping .row .inputBx{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.payment .row .inputBx label,
+.shipping .row .inputBx label{
+    font-size: 18px;
+    color: #646161;
+}
+
+.payment .row .inputBx input,
+.shipping .row .inputBx input{
+    width: 100%;
+    padding: 14px 7px;
+    font-size: 16px;
+    color: #646161;
+    border-radius: 5px;
+    border: 1px solid #d8d3d3;
+    letter-spacing: 0.5px;
+}
+
+.payment .row .inputBx input:focus,
+.shipping .row .inputBx input:focus,
+.shipping .inputBx textarea:focus{
+    border: 1px solid var(--main-color);
+}
+
+.shipping .inputBx{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shipping .inputBx label{
+    font-size: 18px;
+    color: #646161;
+}
+
+.shipping .inputBx textarea{
+   width: 100%;
+   padding: 14px 7px;
+   font-size: 16px;
+   color: #646161; 
+   border-radius: 5px;
+    border: 1px solid #d8d3d3;
+    letter-spacing: 0.5px;
+}
+
+@media(max-width: 1130px) {
+    .billing .left,
+    .billing .right,
+    .payment,
+    .shipping{
+        width: 100%;
+    }
+
+    .checkout .billing{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 600px) {
+    .billing .left .row,
+    .payment .row,
+    .shipping .row{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+}

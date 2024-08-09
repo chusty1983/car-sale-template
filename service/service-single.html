@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Service Single - Car Selling Website Template</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!----Swiper css link--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!----Customer css file--->
+    <link rel='stylesheet' type='text/css' media='screen' href="../css/style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="../css/inventory-grid.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="../css/service-single.css">
+
+    <!----boxicon cdn link--->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body> 
+   <!----Top header section start here--->
+   <div class="top-header">
+    <div class="out-box">
+        <div class="inside-box">
+            <div class="col-1">
+                <span><i class='bx bxs-envelope' ></i> info@lipson.com</span>
+                <span><i class='bx bxs-phone-call' ></i> +2 123 678 9034</span>
+                <span><i class='bx bxs-alarm' ></i> Mon - Sat (8am - 7pm)</span>
+            </div>
+
+            <div class="col-2">
+                <a href="/signup-login/login.html"><i class='bx bx-arrow-to-right' ></i>Login</a>
+                <a href="/signup-login/register.html"><i class='bx bxs-user' ></i>Register</a>
+                <span>Follow Us:</span>
+                <div class="social">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+   
+  <!----Navbar section start here---> 
+  <header class="header">
+    <div class="logo">
+        <a href="../index.html"><img src="../img/logo/logo.png" alt="" /></a>
+    </div>
+    <nav>
+        <div class="navbar"> 
+              <ul class="navLinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="#">Inventory<i class='bx bx-chevron-down chev' ></i></a>
+                    <ul class="drop-down">
+                        <li><a href="/inventory-grid.html">Inventory Grid</a></li>
+                        <li><a href="/inventory-list.html">Inventory List</a></li>
+                        <li><a href="/inventory-single.html">Inventory Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a>
+                    <ul class="drop-down">
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#">Car Listing<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-two">
+                                <li><a href="/inventory-grid.html">Listing Grid</a></li>
+                                <li><a href="/inventory-list.html">Listing List</a></li>
+                                <li><a href="/inventory-single.html">Listing Single</a></li>
+                                <li><a href="#">Compare</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/dashboard.html">Account</a></li>
+                        <li><a href="#">My Account<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-three">
+                                <li><a href="/dashboard.html">Dashboard</a></li>
+                                <li><a href="/profile.html">My Profile</a></li>
+                                <li><a href="/listing.html">My Listing</a></li>
+                                <li><a href="/addListing.html">Add Listing</a></li>
+                                <li><a href="#">Favourites</a></li>
+                                <li><a href="#">Message</a></li>
+                                <li><a href="#">Setting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Authentication<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-four">
+                                <li><a href="../signup-login/login.html">Login</a></li>
+                                <li><a href="../signup-login/register.html">Register</a></li>
+                                <li><a href="../signup-login/reset-password.html">Forgot Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-five">
+                                <li><a href="../service/services.html">Services</a></li>
+                                <li><a href="../service/service-single.html" class="active">Service Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dealer<i class='bx bx-chevron-right chev'></i></a>
+                            <ul class="drop-down-six">
+                                <li><a href="/dealers.html">Dealer</a></li>
+                                <li><a href="#">Dealer Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/brand.html">Brands</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/price-plan.html">Pricing Plan</a></li>
+                        <li><a href="/calculator.html">Calculator</a></li>
+                        <li><a href="/testimonials.html">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shop<i class='bx bx-chevron-down' ></i></a>
+                    <ul class="drop-down">
+                        <li><a href="../shop/shop.html">Shop</a></li>
+                        <li><a href="../shop/cart.html">Shopping Cart</a></li>
+                        <li><a href="../shop/checkout.html">Shop Checkout</a></li>
+                        <li><a href="../shop/shop-single.html">Single Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog<i class='bx bx-chevron-down' ></i></a>
+                    <ul class="drop-down">
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                        <li><a href="../blog/blog-single.html">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+        </div>  
+            <div class="others">
+                <i class='bx bx-search' ></i>
+                <i class='bx bxs-cart cart' ></i>
+                <a href="/addListing.html" class="addBtn"><i class='bx bx-plus-circle' ></i>Add Listing</a>
+                <i class='bx bx-menu-alt-left' id="menuBtn"></i>
+           </div>        
+    </nav>
+  </header>
+
+  <!----Services Single header section start here--->
+  <div class="inventory">
+    <h2>Services Single Page</h2>
+    <div class="link">
+        <a href="../index.html">Home</a>
+        <span>>>></span>
+        <p>Services Single</p>
+    </div>
+</div>
+
+ <!----Service single section start here--->
+ <div class="service_single">
+    <div class="left">
+        <div class="all">
+            <h4>All Services</h4>
+            <p><i class="bx bx-arrow-to-right"></i> Tire & Auto Parts</p>
+            <p><i class="bx bx-arrow-to-right"></i> Heating & AC Repairs</p>
+            <p><i class="bx bx-arrow-to-right"></i> Brake & Repaire Service</p>
+            <p><i class="bx bx-arrow-to-right"></i> Engine & Transmission</p>
+            <p><i class="bx bx-arrow-to-right"></i> Engine Upgrade</p>
+            <p><i class="bx bx-arrow-to-right"></i> Auto Electric</p>
+        </div>
+
+       <div class="download">
+        <a href="#"><i class="bx bxs-file-pdf"></i>Download Brochure</a>
+        <a href="#"><i class="bx bxs-file-doc"></i>Download Application</a>
+       </div> 
+    </div>
+
+   <div class="right">
+    <img src="../img/services/serv1.jpg" alt="" />
+    <h4>Engine & Transmission</h4>
+    <p>Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment
+        Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment</p>
+        <p>Not all customers will qualify. All decisions related to 
+            submission of consumer's credit application, assignment
+            Not all customers will qualify. All decisions related to 
+            submission of consumer's credit application, assignment</p>
+            
+    <div class="images">
+        <img src="../img/services/serv2.jpg" alt="" />
+        <img src="../img/services/serv3.jpg" alt="" />
+    </div>
+    
+    <p>Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment
+        Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment</p>
+
+    <h4>Our Work Process</h4>
+    <p>Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment
+        Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment</p>
+        
+    <div class="lines">
+     <p><i class="bx bx-arrow-to-right"></i> All decisions related to submission</p>
+     <p><i class="bx bx-arrow-to-right"></i> All decisions related to submission</p>
+     <p><i class="bx bx-arrow-to-right"></i> All decisions related to submission</p>
+     <p><i class="bx bx-arrow-to-right"></i> All decisions related to submission</p>
+     <p><i class="bx bx-arrow-to-right"></i> All decisions related to submission</p>
+     <p><i class="bx bx-arrow-to-right"></i> All decisions related to submission</p>  
+    </div>
+
+    <h4>Service Features</h4>
+    <p>Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment
+        Not all customers will qualify. All decisions related to 
+        submission of consumer's credit application, assignment</p> 
+   </div> 
+ </div>
+
+
+ 
+  <!---- Footer section start here--->
+  <div class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <img src="/img/logo/logo-light.png" alt="" />
+           <p>Not all customers will qualify. All decisions related to 
+                submission of consumer's credit application, assignment</p>
+                <span><i class="bx bx-phone"></i>+2 123 654 7898</span>
+                <span><i class="bx bx-location-plus"></i>25/B Milford, New York</span>
+                <span><i class="bx bx-envelope"></i>info@lipson.com</span>
+        </div>
+        <div class="footer-col">
+            <h5>Quick Links</h5>
+            <a href="#"><i class="bx bx-chevron-right"></i>About us</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Update News</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Testimonials</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Terms of Services</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Privacy policy</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Our Dealers</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>About us</a>
+        </div>
+        <div class="footer-col">
+            <h5>Support Center</h5>
+            <a href="#"><i class="bx bx-chevron-right"></i>FAQ's</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Affiliates</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Testimonials</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Booking Tips</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Sell Vehicles</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Contact Us</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Sitemap</a>
+        </div>
+        <div class="footer-col">
+            <h5>Newsletter</h5>
+            <p>Sign up for our newsletter and get the latest update on our cars</p>
+            <input type="text" placeholder="Your Email..">
+            <button>Subscribe Now <i class="bx bxl-telegram"></i></button>
+            
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Copyright 2023, <span>Lipson.</span> All Right Reserved</p>
+        <div class="social">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-youtube"></i>
+    </div>
+
+    <!---- Scroll To Top section start here--->
+    <a href="#" class="scrollBtn">
+        <i class="bx bxs-chevrons-up"></i>
+    </a>
+  </div>
+  
+
+
+  <!----Swiper js link start here--->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!----Custom script start here--->
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+/*=== Header section start here ===*/
+
+.inventory{
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/type/bg-type.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.inventory h2{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.inventory .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.inventory .link a{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.inventory .link a:hover{
+    color: var(--main-color);
+}
+
+.inventory .link span,
+.inventory .link p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/*=== Arrivals Product section start here ===*/
+
+.centric{
+    text-align: center;
+    text-align: center !important;   
+
+}
+
+
+.arrivals .arr-row.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.arrivals.show{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    
+}
+
+.arrivals.show .col-1{
+    flex: 1 1 2rem;
+    width: 200px;
+    text-align: justify;
+}
+
+.arrivals.show .col-1 h5{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+
+.arrivals.show .col-1 h5::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--main-color);
+
+}
+
+.arrivals.show .col-1 .searchBox{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.arrivals.show .col-1 .searchBox .searchBar{
+    border: 1px solid var(--text-color);
+    width: 180px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.arrivals.show .col-1 .searchBox i{
+    position: absolute;
+    top: 10px;
+    right: 4rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.arrivals.show .col-1 .checkBox{
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.arrivals.show .col-1 .checkBox input{
+    margin-right: 0.5rem;
+    margin-bottom: 1.5rem;
+    accent-color: var(--main-color);
+}
+
+.arrivals.show .col-1 .show-col{
+    background: #fff;
+    padding: 2rem 1.5rem;
+    text-align: justify;
+    box-shadow: 0 0 2px #646161;
+    margin-bottom: 1rem;
+}
+
+
+.arrivals.show .col-2{
+    flex: 1 1 60rem;
+}
+
+.arrivals.show .col-2 .image{
+    height: 16rem;
+    width: 240px;    
+}
+
+.arrivals.show .col-2 .head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #646161;
+    margin-bottom: 2rem;
+}
+
+.arrivals.show .col-2 .head span{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'poppins' sans-serif;
+}
+
+.arrivals.show .col-2 .head i{
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    color: var(--text-color);
+}
+
+.arrivals.show .col-2 .head i.grid{
+    color: var(--main-color);
+    padding: 5px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+ .head select{
+    border: 1px solid var(--main-color);
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    font-family: 'poppins' sans-serif;
+}
+
+.arrivals.show .col-2 .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 6rem;
+}
+
+.arrivals.show .col-2 .number span{
+    background: var(--main-color);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2rem;
+    border-radius: 3px;
+    font-family: 'poppins' sans-serif;
+    cursor: pointer;
+
+}
+
+.arrivals.show .col-2 .number span.black{
+    background: var(--text-color);
+    transition: 0.4s ease;
+}
+
+.arrivals.show .col-2 .number span.black:hover{
+    background: var(--main-color);
+}
+
+@media(max-width: 1200px) {
+    .arrivals.show .col-1 .searchBox{
+        position: relative;
+    
+    }
+    
+    
+    .arrivals.show .col-1 .searchBox i{
+        position: absolute;
+        top: 10px;
+        left: 15rem;
+    }
+}
+
+
+@media(max-width: 1151px) {
+    .centric{
+        margin-left: -7rem;
+    
+    }
+
+    .inventory{
+        width: 100%;
+        min-height: 25vh;
+    }
+
+    .arrivals.show .col-1 .searchBox{
+        position: relative;
+    
+    }
+    
+    
+    .arrivals.show .col-1 .searchBox i{
+        position: absolute;
+        top: 10px;
+        left: 15rem;
+    } 
+
+}
+
+@media(max-width: 1117px) {
+    .centric{
+        margin-left: -16rem;
+    
+    }
+
+    .arrivals{
+       margin: 0px 8rem;
+      
+    }
+
+    .arrivals.show .col-1 .searchBox{
+        position: relative;
+    
+    }
+    
+    
+    .arrivals.show .col-1 .searchBox i{
+        position: absolute;
+        top: 10px;
+        left: 15rem;
+    } 
+} 
+
+@media(max-width: 1043px) {
+    .arrivals.show .col-2 .image{
+        height: 14rem;
+        width: 200px;      
+  } 
+
+  .arrivals.show .col-1 .searchBox{
+    position: relative;
+
+}
+
+
+.arrivals.show .col-1 .searchBox i{
+    position: absolute;
+    top: 10px;
+    left: 15rem;
+}
+}
+
+@media(max-width: 925px) {
+    .arrivals .arr-row.row{
+       grid-template-columns: 1fr 1fr;    
+    
+  } 
+
+  .arrivals.show .col-2 .image{
+    height: auto;
+    width: 100%;      
+} 
+
+.arrivals.show .col-1 .searchBox{
+    position: relative;
+
+}
+
+
+.arrivals.show .col-1 .searchBox i{
+    position: absolute;
+    top: 10px;
+    left: 15rem;
+}
+}
+
+@media(max-width: 847px) {
+    .arrivals .arr-row.row{
+       grid-template-columns: 1fr; 
+       flex-wrap: wrap;   
+    
+  }
+  
+  .arrivals{
+    margin-left: 8rem;
+  }
+
+  .arrivals.show .col-1 {
+    flex: 1 1 2rem;
+    width: 300px      
+} 
+}
+
+@media(max-width: 678px) {
+    .arrivals{
+        margin-left: 9rem;
+      }
+} 
+
+@media(max-width: 550px) {
+    .arrivals.show{
+        flex-wrap: wrap;
+        margin-left: 18rem;
+    }
+
+    .arrivals.show .col-1 .searchBox{
+        position: relative;
+    
+    }
+    
+    
+    .arrivals.show .col-1 .searchBox i{
+        position: absolute;
+        top: 10px;
+        left: 15rem;
+    }
+}
+
+@media(max-width: 375px) {
+    .arrivals.show{
+        margin-left: 15rem;
+    }
+}  
+

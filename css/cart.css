@@ -1,0 +1,261 @@
+
+.shop_cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.shop_cart table tr{
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+    border-bottom: 1px solid #fddddf;
+}
+
+.shop_cart table tr:nth-child(1) {
+    border-bottom: none;
+}
+
+.shop_cart table tr.topic {
+    display: flex;
+    justify-content: center;
+    background: var(--main-color);
+    padding: 8px 11px;
+    text-align: center;
+}
+
+.shop_cart table tr.text{
+    padding: 16px 0;
+}
+
+.shop_cart table tr th{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.shop_cart table tr td {
+    padding: 6px 10px;
+    color: #646161;
+    font-size: 17px;
+}
+
+.shop_cart table tr td img{
+    width: 60px;
+    height: 60px;
+}
+
+.shop_cart table tr.text td.text2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.shop_cart table tr.text .subtot p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.shop_cart table tr.text .text-icon i{
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.shop_cart table tr.text .text-icon i:hover{
+    color: var(--main-color);
+}
+
+.shop_cart table tr td input{
+    width: 50px;
+    font-size: 17px;
+    color: var(--text-color);
+    border: 1px solid #fddddf;
+    text-align: center;
+}
+
+.cart-full{
+    width: 700px;
+    padding: 3rem;
+}
+
+.cart-full h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    color: var(--text-color);
+    border-bottom: 1px solid #fddddf;
+}
+
+.cart-full .cart-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #fddddf;
+}
+
+
+.cart-full .cart-row .cart-col{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart-full .cart-row .cart-col h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.cart-full .cart-row .cart-col h4.text-color{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.cart-full button{
+    width: 250px;
+    height: 45px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+}
+
+.cart-full button:hover{
+    background: var(--text-color);
+}
+
+
+@media(max-width: 1133px) {
+    .shop_cart table tr{
+        gap: 60px;
+    }  
+}
+
+@media(max-width: 851px) {
+    .shop_cart table tr{
+        gap: 15px;
+    }
+    
+    .cart-full{
+        width: 400px;
+    }
+}
+
+@media(max-width: 593px) {
+    .shop_cart table tr th{
+        font-size: 14px;
+    }
+
+    .cart-full .cart-row .cart-col h4{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 538px) {
+    .shop_cart table tr {
+        gap: 5px;
+    }
+
+    .shop_cart table tr th{
+        font-size: 12px;
+    
+    }
+    .cart-full{
+        width: 300px;
+    }
+
+    .cart-full .cart-row .cart-col h4{
+        font-size: 12px;
+    }
+
+    .cart-full button{
+        width: 180px;
+        height: 35px;
+    }
+} 
+
+@media(max-width: 463px) {
+    .shop_cart table tr {
+        gap: 3px;
+    }
+
+    .cart-full{
+        width: 150px;
+    }
+} 
+
+@media(max-width: 440px) {
+    .shop_cart table tr th{
+        font-size: 10px;
+    
+    }
+    .shop_cart table tr.text td.text2{
+        font-size: 12px;
+    }
+
+    .shop_cart table tr.text .subtot p{
+        font-size: 12px;
+    }
+
+    .shop_cart table tr td img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .shop_cart table tr.text .text-icon i{
+        font-size: 16px;
+     }
+
+     .cart-full button{
+        width: 160px;
+        height: 35px;
+        font-size: 13px;
+       
+    }
+} 
+
+
+@media(max-width: 368px) {
+    .shop_cart table tr th{
+        font-size: 9px;
+    
+    }
+    .shop_cart table tr.text td.text2{
+        font-size: 11px;
+    }
+
+    .shop_cart table tr.text .subtot p{
+        font-size: 11px;
+    }
+
+    .shop_cart table tr td img{
+        width: 39px;
+        height: 39px;
+    }
+
+    .shop_cart table tr.text .text-icon i{
+        font-size: 16px;
+     }
+
+     .cart-full button{
+        width: 160px;
+        height: 35px;
+        font-size: 13px;
+       
+    }
+}
+
+

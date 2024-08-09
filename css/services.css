@@ -1,0 +1,128 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services .service-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-row .service-col{
+    box-shadow: 0 0 5px #d8d3d3;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5;
+    position: relative;
+    text-align: justify;
+    transition: 0.5s ease;
+}
+
+.service-row .service-col:hover{
+    transform: translateY(10px);
+}
+
+.service-row .service-col .image{
+    width: 100%;
+    height: 22rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.service-row .service-col .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.service-row .service-col .image img.icon{
+    position: absolute;
+    bottom: -30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.service-row .service-col h5{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #646161;
+    padding-bottom: 10px;
+}
+
+.service-row .service-col p{
+    font-size: 14px;
+    color: #646161;
+    padding-bottom: 20px;
+}
+
+.service-row .service-col a{
+    background: var(--main-color);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.service-row .service-col a:hover{
+    background: var(--text-color);
+    color: #fff;
+}
+
+
+@media(max-width: 1160px) {
+    .services .service-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    .services .service-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services .service-row .service-col .image{
+        width: 100%;
+       height: auto; 
+    }
+
+    .services .service-row .service-col .image img{
+        width: 100%;
+       height: 100%; 
+    }
+
+    .service-row .service-col .image{
+        position: relative;
+    }
+    
+    .service-row .service-col .image img.icon{
+        position: absolute;
+        bottom: -30px;
+        right: 0px;
+        width: 60px;
+        height: 60px;
+        
+    }
+}
+
+@media(max-width: 450px) {
+    .services h1{
+        font-size: 2.4rem;
+    }   
+
+    .services h4{
+       font-size: 1.6rem;
+   }
+} 
+
+ 
+ 

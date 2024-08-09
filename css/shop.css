@@ -1,0 +1,12 @@
+
+.shop .arr-row .arr-col .price p{
+   display: flex;
+   gap: 1rem;
+}
+
+.shop .arr-row .arr-col .price p span.old-price{
+    color: #b4afaf;
+    text-decoration: line-through;
+}
+
+
